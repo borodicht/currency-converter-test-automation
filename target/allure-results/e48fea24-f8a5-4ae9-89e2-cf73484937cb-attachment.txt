@@ -1,0 +1,1 @@
+PRODUCT-DEFECT: URL содержит ?amount=987654.32

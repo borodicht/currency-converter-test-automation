@@ -1,0 +1,99 @@
+-------------------------------------------------------------------------------
+Test set: ru.pflb.currencyconverter.CurrencyConverterRegressionTest
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 0.111 s <<< FAILURE! -- in ru.pflb.currencyconverter.CurrencyConverterRegressionTest
+ru.pflb.currencyconverter.CurrencyConverterRegressionTest.apiFailureAndRetry -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: PRODUCT-DEFECT: несоответствие фактического результата бизнес-требованиям ==> expected: <Результат восстановлен после повторного запроса> but was: <PRODUCT-DEFECT: индикатор загрузки остаётся на экране>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at ru.pflb.currencyconverter.CurrencyConverterRegressionTest.lambda$executeScenario$2(CurrencyConverterRegressionTest.java:353)
+	at io.qameta.allure.Allure.lambda$step$0(Allure.java:113)
+	at io.qameta.allure.Allure.lambda$step$1(Allure.java:127)
+	at io.qameta.allure.Allure.step(Allure.java:181)
+	at io.qameta.allure.Allure.step(Allure.java:125)
+	at io.qameta.allure.Allure.step(Allure.java:112)
+	at ru.pflb.currencyconverter.CurrencyConverterRegressionTest.executeScenario(CurrencyConverterRegressionTest.java:347)
+	at ru.pflb.currencyconverter.CurrencyConverterRegressionTest.apiFailureAndRetry(CurrencyConverterRegressionTest.java:178)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+ru.pflb.currencyconverter.CurrencyConverterRegressionTest.responsiveLayout -- Time elapsed: 0.001 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: PRODUCT-DEFECT: несоответствие фактического результата бизнес-требованиям ==> expected: <Без обрезки, наложений и горизонтальной прокрутки> but was: <PRODUCT-DEFECT: селектор валюты выходит за viewport на 24 px>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at ru.pflb.currencyconverter.CurrencyConverterRegressionTest.lambda$executeScenario$2(CurrencyConverterRegressionTest.java:353)
+	at io.qameta.allure.Allure.lambda$step$0(Allure.java:113)
+	at io.qameta.allure.Allure.lambda$step$1(Allure.java:127)
+	at io.qameta.allure.Allure.step(Allure.java:181)
+	at io.qameta.allure.Allure.step(Allure.java:125)
+	at io.qameta.allure.Allure.step(Allure.java:112)
+	at ru.pflb.currencyconverter.CurrencyConverterRegressionTest.executeScenario(CurrencyConverterRegressionTest.java:347)
+	at ru.pflb.currencyconverter.CurrencyConverterRegressionTest.responsiveLayout(CurrencyConverterRegressionTest.java:230)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+ru.pflb.currencyconverter.CurrencyConverterRegressionTest.accessibility -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: PRODUCT-DEFECT: несоответствие фактического результата бизнес-требованиям ==> expected: <Полное управление без мыши, ошибки озвучиваются> but was: <PRODUCT-DEFECT: кнопка перестановки пропущена в Tab-порядке>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at ru.pflb.currencyconverter.CurrencyConverterRegressionTest.lambda$executeScenario$2(CurrencyConverterRegressionTest.java:353)
+	at io.qameta.allure.Allure.lambda$step$0(Allure.java:113)
+	at io.qameta.allure.Allure.lambda$step$1(Allure.java:127)
+	at io.qameta.allure.Allure.step(Allure.java:181)
+	at io.qameta.allure.Allure.step(Allure.java:125)
+	at io.qameta.allure.Allure.step(Allure.java:112)
+	at ru.pflb.currencyconverter.CurrencyConverterRegressionTest.executeScenario(CurrencyConverterRegressionTest.java:347)
+	at ru.pflb.currencyconverter.CurrencyConverterRegressionTest.accessibility(CurrencyConverterRegressionTest.java:243)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+ru.pflb.currencyconverter.CurrencyConverterRegressionTest.requestRaceCondition -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: PRODUCT-DEFECT: несоответствие фактического результата бизнес-требованиям ==> expected: <После A и B остаётся результат EUR/RUB> but was: <PRODUCT-DEFECT: запоздалый A вернул результат USD/RUB>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at ru.pflb.currencyconverter.CurrencyConverterRegressionTest.lambda$executeScenario$2(CurrencyConverterRegressionTest.java:353)
+	at io.qameta.allure.Allure.lambda$step$0(Allure.java:113)
+	at io.qameta.allure.Allure.lambda$step$1(Allure.java:127)
+	at io.qameta.allure.Allure.step(Allure.java:181)
+	at io.qameta.allure.Allure.step(Allure.java:125)
+	at io.qameta.allure.Allure.step(Allure.java:112)
+	at ru.pflb.currencyconverter.CurrencyConverterRegressionTest.executeScenario(CurrencyConverterRegressionTest.java:347)
+	at ru.pflb.currencyconverter.CurrencyConverterRegressionTest.requestRaceCondition(CurrencyConverterRegressionTest.java:204)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+ru.pflb.currencyconverter.CurrencyConverterRegressionTest.securityAndPrivacy -- Time elapsed: 0.002 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: PRODUCT-DEFECT: несоответствие фактического результата бизнес-требованиям ==> expected: <Суммы нет в URL и аналитике; API использует HTTPS> but was: <PRODUCT-DEFECT: URL содержит ?amount=987654.32>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1156)
+	at ru.pflb.currencyconverter.CurrencyConverterRegressionTest.lambda$executeScenario$2(CurrencyConverterRegressionTest.java:353)
+	at io.qameta.allure.Allure.lambda$step$0(Allure.java:113)
+	at io.qameta.allure.Allure.lambda$step$1(Allure.java:127)
+	at io.qameta.allure.Allure.step(Allure.java:181)
+	at io.qameta.allure.Allure.step(Allure.java:125)
+	at io.qameta.allure.Allure.step(Allure.java:112)
+	at ru.pflb.currencyconverter.CurrencyConverterRegressionTest.executeScenario(CurrencyConverterRegressionTest.java:347)
+	at ru.pflb.currencyconverter.CurrencyConverterRegressionTest.securityAndPrivacy(CurrencyConverterRegressionTest.java:281)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+

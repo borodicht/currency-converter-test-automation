@@ -1,0 +1,1 @@
+PRODUCT-DEFECT: селектор валюты выходит за viewport на 24 px

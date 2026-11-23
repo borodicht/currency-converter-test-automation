@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"c81e0fb692da2b9125c3388a18455672","name":"ru.pflb.currencyconverter.CurrencyConverterRegressionTest","statistic":{"failed":5,"broken":0,"skipped":0,"passed":14,"unknown":0,"total":19}},{"uid":"488ce22680d0cf4eb836a71cb5e99381","name":"Регрессионное тестирование","statistic":{"failed":5,"broken":0,"skipped":0,"passed":14,"unknown":0,"total":19}}]}

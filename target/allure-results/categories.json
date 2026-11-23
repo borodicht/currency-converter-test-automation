@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Дефекты продукта",
+    "matchedStatuses": ["failed"],
+    "messageRegex": ".*PRODUCT-DEFECT.*"
+  },
+  {
+    "name": "Проверки стабильности API",
+    "matchedStatuses": ["broken", "failed"],
+    "traceRegex": ".*(HTTP 500|гонк).*"
+  }
+]

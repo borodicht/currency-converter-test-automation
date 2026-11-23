@@ -1,0 +1,7 @@
+{
+  "name": "Maven CI Runner",
+  "type": "maven",
+  "buildName": "Currency Converter Regression #1",
+  "buildUrl": "https://allure.pflb.ru/project/11",
+  "reportName": "Регрессионное тестирование конвертера валют"
+}
